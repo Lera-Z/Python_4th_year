@@ -4,4 +4,4 @@ def fibonacci(n):
         nums.append(nums[i-1] + nums[i-2])
     return nums[n-1]
 
-print(fibonacci(18))
+print(fibonacci(1))
