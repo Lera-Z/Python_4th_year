@@ -41,7 +41,7 @@ def search_rabin2(text, *args, x=31, p=997):
         for i in range(len(pat)):
             factor = (factor * x + p) % p
 
-        for i in range(len(text) - len(pat) - 1, 0, -1):
+        for i in range(len(text) - len(pat) - 1, -1, -1):
             precomputed[i] = (precomputed[i + 1] * x + ord(text[i]) - factor * ord(text[i + len(pat)]) + p) % p
 
         pattern_hash = poly_hash(pat, x, p)
