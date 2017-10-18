@@ -155,9 +155,9 @@ class Experiment:
 
 
 
-pars = WikiParser()
-experiment = Experiment()
-experiment.show_results(pars)
+# pars = WikiParser()
+# experiment = Experiment()
+# experiment.show_results(pars)
 
 
 
@@ -177,6 +177,6 @@ class TestCase(unittest.TestCase):
 
 
 
-# case = TestCase()
-# suite = unittest.TestLoader().loadTestsFromModule(case)
-# unittest.TextTestRunner().run(suite)
+case = TestCase()
+suite = unittest.TestLoader().loadTestsFromModule(case)
+unittest.TextTestRunner().run(suite)
